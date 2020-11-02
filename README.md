@@ -21,3 +21,7 @@ async function main() {
 
 main().catch((err) => console.error(err));
 ```
+
+---
+
+This project was developed for usage within [Sport-Thieme](https://sport-thieme.de/)'s internal tooling.
