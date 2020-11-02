@@ -2,10 +2,10 @@
 
 ### Installation
 
-| tool | command                             |
-| ---- | ----------------------------------- |
-| yarn | yarn add npm-pkg-versions           |
-| npm  | npm install --save npm-pkg-versions |
+| tool | command                               |
+| ---- | ------------------------------------- |
+| yarn | `yarn add npm-pkg-versions`           |
+| npm  | `npm install --save npm-pkg-versions` |
 
 ### Usage
 
