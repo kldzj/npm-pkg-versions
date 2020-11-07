@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from 'cross-fetch';
 
 const REGISTRY_ENDPOINT = 'https://registry.npmjs.org/';
 
@@ -10,12 +10,12 @@ async function listPackageVersions(packageName: string): Promise<string[] | null
 			return null;
 		}
 
-		throw new Error(`Registry API returned status code ${response.status}`);
+		throw new Error(`npm Registry API returned status code ${response.status}`);
 	}
 
 	const result = await response.json();
 	if (!result || !result.versions) {
-		throw new Error('Registry API returned invalid response');
+		throw new Error('npm Registry API returned invalid response');
 	}
 
 	return Object.values(result.versions)
